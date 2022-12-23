@@ -100,7 +100,7 @@ class CachedNetworkImageProvider extends ImageProvider<image_provider.CachedNetw
       headers,
       errorListener,
       imageRenderMethodForWeb,
-      () => PaintingBinding.instance.imageCache?.evict(key),
+      () => PaintingBinding.instance.imageCache.evict(key),
     );
   }
 
